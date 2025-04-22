@@ -1,0 +1,332 @@
+/* Web Page Basics */
+body {
+    background-color: rgb(142, 116, 82);
+    font-family: 'Times New Roman';
+    margin: 0;
+}
+.main-section {
+    width: 65%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+}
+.article-header-text {
+    margin-top: 6px;
+    font-size: 40px;
+}
+.text-break {
+    background-color: rgb(45, 32, 15);
+    border-color: rgb(45, 32, 15);
+    height: 4px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-section-body {
+    text-align: left;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+h4 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+p {
+    text-align: left;
+}
+ul {
+    text-align: left;
+}
+
+
+/* Site Header */
+.site-header {
+    height: 135px; 
+    justify-content: space-between;
+    background-color: rgb(114, 91, 58);
+    margin-bottom: 10px;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    align-items: center;
+}
+.masthead {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 135px;
+    margin-right: 30px;
+}
+.site-title {
+    font-size: 50px;
+}
+.header-button {
+    margin-right: 50px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.header-button:hover {
+    text-decoration: underline;
+}
+.header-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-button {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.article-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(142, 116, 82);
+    min-width: 220px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.article-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*mini header*/
+.mini-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(114, 91, 58);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    font-family: 'Cinzel', serif;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    color: black;
+}
+.mini-logo {
+    height: 90px;
+}
+.mini-header nav {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.mini-header nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+.mini-header-button {
+    font-size: 16px;
+}
+.mini-header.show {
+    transform: translateY(0);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(142, 116, 82);
+    min-width: 220px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.mini-masthead {
+    display: flex;
+    align-items: center;
+}
+
+.mini-logo {
+    height: 70px;
+    margin-right: 50px; 
+}
+
+.mini-title {
+    margin: 0;
+    font-size: 35px; 
+}
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Home */
+.home-logo {
+    height: 170px
+}
+.home-title {
+    font-size: 60px;
+    margin-top: 0px;
+}
+.top-info-nav-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 80px;
+    margin-bottom: 40px;
+  }
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 10%;
+  }
+  .nav-button-info {
+    font-size: 23px;
+    text-align: center;
+    max-width: 325px;
+    margin-top: 10px;
+  }
+  .nav-button p {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+.button-link {
+    display: inline-block;
+    font-size: 40px;
+    padding: 10px 20px;
+    font-family: 'Cinzel', serif;
+    background-color: rgb(142, 116, 82);
+    height: 60px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 4px;
+    border: 2px solid black;
+    transition: background-color 0.3s ease;
+  }
+.button-link:hover {
+    background-color: rgb(98, 79, 55); 
+  }
+.bottom-info-nav-button {
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+  }
+.recent-additions p {
+    font-size: 25px;
+  }
+.recent-additions a {
+    color: rgb(76, 61, 42);
+  }
+.recent-additions a:hover {
+    color: rgb(145, 116, 79);
+  }
+
+/* Articles */
+.articles a {
+    color: rgb(76, 61, 42);
+  }
+.articles a:hover {
+    color: rgb(145, 116, 79);
+  }
+
+
+
+
+/* Training Manuals */
+.infantry-header {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.manual {
+    margin-bottom: 40px;
+}
+.manual h3 {
+    margin-bottom: 10px;
+}
+
+.manual-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.manual-content img {
+    width: 230px;
+    height: 350px;
+    margin-right: 20px;
+}
+.text {
+    flex: 1;
+    font-size: 125%;
+}
+ul {
+    padding-left: 20px;
+}
+.other-manual-header {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.other-manual-section {
+    display: flex;
+    justify-content: space-between;
+}
+.other-manual-section img {
+    width: 230px;
+    height: 350px;
+}
+.other-manual {
+    width: 48%;
+}
+.heading-fixer {
+    min-height: 40px;
+}
+
+/* Lees */
+.iterations-body {
+    text-align: left;
+}
+.iterations-body h2 {
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.iterations-body h3 {
+    font-size: 30px;
+}
+.iterations-body li{
+    font-size: 20px;
+}

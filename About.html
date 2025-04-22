@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About Blinks Barracks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="site-header">
+      <div class="masthead">
+        <img class="logo" src="images/The Blinkshinati.png">
+        <h1 class="site-title">Blink's Militaria</h1>
+      </div>
+      <div class="header-nav">
+        <a class="header-button" href="Home.html">HOME</a>
+        <a class="header-button" href="About.html">ABOUT</a>
+        <div class="article-dropdown">
+          <a class="header-button" href="Articles.html">ARTICLES</a>
+          <div class="dropdown-content">
+            <a href="Blink's Militaria.html">british army training manuals of the late 18th and 19th century</a>
+            <a href="Iterations of the Lee Family of Rifles.html">iterations of the lee long-arms</a>
+          </div>
+        </div>
+        <a class="header-button" href="Blog.html">BLOG</a>
+      </div>
+    </div>
+    <div class="main-section">
+        <main>
+            <h1 class="article-header-text">About</h1>
+            <hr class="text-break">
+                <p>This site was initally created to compile into a single place various and hard to find British Army training manuals of the 19th century.
+                   But, after finishing that I decided to make this a pet project where I could digitise other educational resources like the iterations of Lee
+                   rifles as well as to start a blog where I could write freely on various military and general historical topics that interest me.
+                </p>
+                <p>If you have any comments or suggestions please send them to:</p>
+                <p>Blinks_Barracks@protonmail.com</p>
+        </main>
+    </div>
+  <script>
+    const miniHeader = document.getElementById('miniHeader');
+    const mainHeader = document.querySelector('.site-header');
+    
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        const triggerHeight = mainHeader.offsetHeight;
+    
+        if (scrollY > triggerHeight) {
+        miniHeader.classList.add('show');
+        } else {
+        miniHeader.classList.remove('show');
+        }
+    });
+  </script>
+  </body>

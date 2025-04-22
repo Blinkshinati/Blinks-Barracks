@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blink's Barracks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="site-header">
+      <div class="masthead">
+        <img class="logo" src="images/The Blinkshinati.png">
+        <h1 class="site-title">Blink's Barracks</h1>
+      </div>
+      <div class="header-nav">
+        <a class="header-button" href="Home.html">HOME</a>
+        <a class="header-button" href="About.html">ABOUT</a>
+        <div class="article-dropdown">
+          <a class="header-button" href="Articles.html">ARTICLES</a>
+          <div class="dropdown-content">
+            <a href="Blink's Militaria.html">british army training manuals of the late 18th and 19th century</a>
+            <a href="Iterations of the Lee Family of Rifles.html">iterations of the lee long-arms</a>
+          </div>
+        </div>
+        <a class="header-button" href="Blog.html">BLOG</a>
+      </div>
+      <div class="mini-header" id="miniHeader">
+        <div class="mini-masthead">
+          <img class="mini-logo" src="images/The Blinkshinati.png">
+          <h1 class="mini-title">Blink's Barracks</h1>
+        </div>
+        <nav>
+          <a href="Home.html">HOME</a>
+          <a href="About.html">ABOUT</a>
+          <div class="article-dropdown">
+            <a class="mini-header-button" href="Articles.html">ARTICLES</a>
+            <div class="dropdown-content">
+              <a href="Blink's Militaria.html">british army training manuals of the late 18th and 19th century</a>
+              <a href="Iterations of the Lee Family of Rifles.html">iterations of the lee long-arms</a>
+            </div>
+          </div>
+          <a href="Blog.html">BLOG</a>
+        </nav>
+      </div>
+    </div>
+        <div class="mini-header" id="miniHeader">
+      <div class="mini-masthead">
+        <img class="mini-logo" src="images/The Blinkshinati.png">
+        <h1 class="mini-title">Blink's Barracks</h1>
+      </div>
+      <nav>
+        <a href="Home.html">HOME</a>
+        <a href="About.html">ABOUT</a>
+        <div class="article-dropdown">
+          <a class="mini-header-button">ARTICLES</a>
+          <div class="dropdown-content">
+            <a href="Blink's Militaria.html">british army training manuals of the late 18th and 19th century</a>
+            <a href="Iterations of the Lee Family of Rifles.html">iterations of the lee long-arms</a>
+          </div>
+        </div>
+        <a href="Blog.html">BLOG</a>
+      </nav>
+    </div>
+    <div class="main-section">
+        <main>
+          <img src="images/The Blinkshinati.png" class="home-logo">
+          <h1 class="home-title">BLINK'S BARRACKS</h1>
+          <hr class="text-break">
+          <div class="top-info-nav-buttons">
+            <div class="nav-button">
+              <a href="Articles.html" class="button-link">
+                Articles
+              </a>
+              <p class="nav-button-info">Resources and educational materials relating to various parts of miltiary history</p>
+            </div>
+            <div class="nav-button right button">
+              <a href="Blog.html" class="button-link">
+                Blog
+              </a>
+              <p class="nav-button-info">Personal writings on diverse historical and modern miltiary subjects</p>
+            </div>
+          </div>
+          <div class="bottom-info-nav-button">
+            <div class="nav-button">
+              <a href="About.html" class="button-link">
+                About
+              </a>
+            </div>
+          </div>
+          <hr class="text-break">
+          <div class="recent-additions">
+            <h2>Recent Additions</h2>
+                <p><em>(17/04/2025)</em> An article on:</p>
+                  <p><a href="Iterations of the Lee Family of Rifles.html">Iterations of the Lee Long-Arms</a></p>
+                  <p>An in depth look at each iteration of the Lee family of rifles including the first marks of the Lee-Metford, the venerable Short-Magazine Lee Enfield Mk3*, the Jungle Carbine, all the way up to the last Lees of the 1950s and everything inbetween.</p>
+                <br>
+                  <p><em>(15/04/2025)</em> A blog post on:</p>
+                  <p><a href="Blog.html">Will AUKUS actually deliver for Australia?</a></p>
+                  <p>A look at whether Australia's decision to acquire both American and subsequently a domestically built nuclear submarine force is strategically sound, both in principle as well as practically if it will be likely to deliver a potent deterrent in face of growing regional uncertainty.</p>
+
+          </div>
+        </main>
+    </div>
+  <script>
+    const miniHeader = document.getElementById('miniHeader');
+    const mainHeader = document.querySelector('.site-header');
+    
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        const triggerHeight = mainHeader.offsetHeight;
+    
+        if (scrollY > triggerHeight) {
+        miniHeader.classList.add('show');
+        } else {
+        miniHeader.classList.remove('show');
+        }
+    });
+  </script>
+  </body>
