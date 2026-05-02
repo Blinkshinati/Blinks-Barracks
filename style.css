@@ -330,3 +330,9 @@ ul {
 .iterations-body li{
     font-size: 20px;
 }
+
+/* Blog */
+.blog-image {
+    width: 400px;
+    height: auto;
+}
